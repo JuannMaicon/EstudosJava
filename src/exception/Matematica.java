@@ -1,5 +1,5 @@
 package exception;
-
+import java.io.*;
 public class Matematica {
 public static int gerarNumero(int numero)throws NumeroInvalidoException {
 	int retorno;
