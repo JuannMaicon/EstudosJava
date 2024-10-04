@@ -23,6 +23,10 @@ public class MeuFrame extends JFrame implements ActionListener {
 				System.out.println("Cliquei No Botão 3ª Vez");
 
 			}
+		}); 
+		meuBotao.addActionListener(e ->{
+			System.out.println("Clique No Botão 4ª Vez");
+			
 		});
 
 		// Frame
