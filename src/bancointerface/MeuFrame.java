@@ -14,7 +14,8 @@ public class MeuFrame extends JFrame implements ActionListener {
 		meuBotao = new JButton("Meu botão");
 		meuBotao.setBounds(20,20,100,30);
 		meuBotao.addActionListener(this);
-		meuBotao.addActionListener(new MeuActionListener());
+		MeuActionListener listener =new MeuActionListener();
+		meuBotao.addActionListener(listener);
 
 		//Frame
 		getContentPane().setLayout(null);
