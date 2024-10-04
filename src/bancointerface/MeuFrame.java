@@ -2,6 +2,8 @@ package bancointerface;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -27,6 +29,12 @@ public class MeuFrame extends JFrame implements ActionListener {
 		meuBotao.addActionListener(e ->{
 			System.out.println("Clique No Botão 4ª Vez");
 			
+		});
+		meuBotao.addMouseListener(new MouseAdapter() {
+		@Override
+		public void mouseEntered(MouseEvent e) {
+			meuBotao.setVisible(true);
+		}
 		});
 
 		// Frame

@@ -15,7 +15,6 @@ public class Janela extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -52,11 +51,6 @@ public class Janela extends JFrame {
 		});
 		btnNewButton.setBounds(162, 216, 89, 23);
 		contentPane.add(btnNewButton);
-		
-		textField = new JTextField();
-		textField.setBounds(165, 11, 86, 20);
-		contentPane.add(textField);
-		textField.setColumns(10);
 	}
 
 }
